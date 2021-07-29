@@ -60,15 +60,15 @@ use "http://localhost:8080/h2-console/" to login to h2 console.
 configuration for H2 can be found in "diceRollSimulator-master\src\main\resources\application.properties"
 
 #Main Files and there purpose
-	SimulatorApplication(Main Class for startup)
-	DiceSimulator.java (Rest Endpoints Exposed)
-	DiceSimulatorImpl (Rest Implementation)
+	SimulatorApplication(Main Class for startup),
+	DiceSimulator.java (Rest Endpoints Exposed),
+	DiceSimulatorImpl (Rest Implementation),
 	DiceSimulatorUtil.java (Utility class where dice roll distribution resides)
 				
 #Validation
 Basic Validation done -->
-	Number of Dice cannot be less than 1
-	Number of Rolls cannot be less than 1
+	Number of Dice cannot be less than 1,
+	Number of Rolls cannot be less than 1,
 	Number of Sides cannot be less than 4
 
 
