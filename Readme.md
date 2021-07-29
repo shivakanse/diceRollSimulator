@@ -1,10 +1,10 @@
-Prerequisite
+#Prerequisite
 Maven and Java 8 required.
 Please build project using --> "mvn clean install"
 Run Application using CMD --> "java -jar target\simulator-0.0.1-SNAPSHOT.jar com.simulation.SimulatorApplication"
 Once you see " Started SimulatorApplication in 6.024 seconds (JVM running for 6.519)" application is up and running and following rest endpoints can be called.
 
-Two Endpoints exposed
+#Two Endpoints exposed
 
 1> http://localhost:8080/dice/simulateDiceDistribution
 	When above rest api is called, distribution logic will execute.
@@ -54,40 +54,21 @@ Two Endpoints exposed
 	  ]
 	}
 
-Database used -->
+#Database used -->
 Here we are using H2 in memory database for storage. Data will remain untill Application server is up. Once server is restarted data will be lost.
 use "http://localhost:8080/h2-console/" to login to h2 console.
 configuration for H2 can be found in "diceRollSimulator-master\src\main\resources\application.properties"
 
-Structure -->
-Project --> 
-	com.simulation
-		SimulatorApplication(Main Class for startup)
-		--> dice
-			-->endpoint
-				-->DiceSimulator.java (Rest Endpoints Exposed)
-			-->exception
-				-->InternalServerException.java
-				-->InvalidInputException.java
-			-->handler
-				-->DiceRepository.java
-				-->ErrorHandler.java
-			-->impl
-				-->DiceSimulatorImpl (Rest Implementation)
-			-->model
-				-->Dice.java
-				-->DiceRollSimulationsInfo.java
-			-->payload
-				-->CustomException.java
-				-->DiceRollResponse.java
-				-->DiceRollSimulationResponse.java
-			-->util
-				-->DiceSimulatorUtil.java (Utility class where dice roll distribution resides)
+#Main Files and there purpose
+	SimulatorApplication(Main Class for startup)
+	DiceSimulator.java (Rest Endpoints Exposed)
+	DiceSimulatorImpl (Rest Implementation)
+	DiceSimulatorUtil.java (Utility class where dice roll distribution resides)
 				
-Validation
+#Validation
 Basic Validation done -->
-Number of Dice cannot be less than 1
-Number of Rolls cannot be less than 1
-Number of Sides cannot be less than 4
+	Number of Dice cannot be less than 1
+	Number of Rolls cannot be less than 1
+	Number of Sides cannot be less than 4
 
 
