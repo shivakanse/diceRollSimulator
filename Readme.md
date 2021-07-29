@@ -59,7 +59,7 @@ Here we are using H2 in memory database for storage. Data will remain untill App
 use "http://localhost:8080/h2-console/" to login to h2 console.
 configuration for H2 can be found in "diceRollSimulator-master\src\main\resources\application.properties"
 
-#Main Files and there purpose
+#Main Files and there purpose -->
 	SimulatorApplication(Main Class for startup),
 	DiceSimulator.java (Rest Endpoints Exposed),
 	DiceSimulatorImpl (Rest Implementation),
