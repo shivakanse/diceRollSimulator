@@ -1,7 +1,7 @@
 Prerequisite
 Maven and Java 8 required.
-Please build project using --> mvn clean install
-Run Application using CMD --> java -jar target\simulator-0.0.1-SNAPSHOT.jar com.simulation.SimulatorApplication
+Please build project using --> "mvn clean install"
+Run Application using CMD --> "java -jar target\simulator-0.0.1-SNAPSHOT.jar com.simulation.SimulatorApplication"
 Once you see " Started SimulatorApplication in 6.024 seconds (JVM running for 6.519)" application is up and running and following rest endpoints can be called.
 
 Two Endpoints exposed
