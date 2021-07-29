@@ -1,3 +1,9 @@
+Prerequisite
+Maven and Java 8 required.
+Please build project using --> mvn clean install
+Run Application using CMD --> java -jar target\simulator-0.0.1-SNAPSHOT.jar com.simulation.SimulatorApplication
+Once you see " Started SimulatorApplication in 6.024 seconds (JVM running for 6.519)" application is up and running and following rest endpoints can be called.
+
 Two Endpoints exposed
 
 1> http://localhost:8080/dice/simulateDiceDistribution
@@ -47,6 +53,3 @@ Two Endpoints exposed
 	    }
 	  ]
 	}
-
-3> To Run Application click on application.bat
-	When you see " Started SimulatorApplication in 6.152 seconds (JVM running for 6.734)" that means server is up and rest api can be called.
